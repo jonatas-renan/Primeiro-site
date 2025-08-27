@@ -1,0 +1,27 @@
+#centralizado {
+    text-align: center;
+}
+
+#esquerda {
+    text-align: left;
+}
+
+#direita {
+    text-align: right;
+}
+
+#sublinhado {
+    text-decoration: underline;
+}
+
+#estilo {
+    color:blue;
+    font-size: 48px;
+}
+
+.center {
+    text-align: center;
+}
+#quebra_linha {
+    text-align: justify;
+}
