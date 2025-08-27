@@ -1,0 +1,110 @@
+/* Este é o arquivo de estilos (estilos.css).
+   As regras definidas aqui controlam a aparência de todos os elementos do arquivo index.html. */
+
+
+/* --- SEÇÃO 1: ESTILOS GERAIS E LAYOUT --- */
+/* Estas são regras base que se aplicam à página como um todo. */
+
+/* O seletor 'body' aplica estilos a todo o corpo do documento. */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes prioritárias. Se o Arial não estiver disponível, ele usa o Helvetica, etc. */
+    line-height: 1.6;                          /* Aumenta o espaço entre as linhas de texto para melhor legibilidade. */
+    color: #333;                               /* Define a cor padrão do texto para um cinza escuro. */
+    margin: 0;                                 /* Remove a margem padrão do navegador. */
+    padding: 0;                                /* Remove o espaçamento interno padrão do navegador. */
+}
+
+/* O seletor de classe '.container' estiliza qualquer elemento com class="container". */
+.container {
+    max-width: 900px; /* Impede que o conteúdo se estique demais em telas grandes. */
+    margin: 20px auto; /* Define 20px de margem em cima/embaixo e 'auto' nas laterais, o que centraliza o bloco. */
+    padding: 0 20px;   /* Adiciona um espaçamento interno nas laterais para o conteúdo não colar nas bordas. */
+}
+
+/* Estiliza o cabeçalho azul da atividade. */
+.cabecalho-atividade {
+    background-color: #4a6a8a; /* Define a cor de fundo. */
+    color: white;              /* Define a cor do texto para branco. */
+    padding: 10px 20px;        /* Adiciona espaçamento interno. */
+    text-align: center;        /* Centraliza o texto do cabeçalho. */
+}
+
+/* Estiliza a tag <hr> (linha horizontal). */
+hr {
+    margin: 20px 0;      /* Adiciona espaço acima e abaixo da linha. */
+    border: 0;           /* Remove a borda padrão. */
+    border-top: 1px solid #eee; /* Cria uma nova borda superior fina e cinza claro. */
+}
+
+
+/* --- SEÇÃO 2: ESTILOS DE TEXTO E TÍTULOS --- */
+/* Regras específicas para a aparência de textos, títulos e links. */
+
+/* Estiliza o H1 para ficar centralizado. */
+.titulo-principal {
+    text-align: center;
+}
+
+/* Estiliza o H2 para ficar alinhado à esquerda (comportamento padrão, mas explícito aqui). */
+.subtitulo {
+    text-align: left;
+}
+
+/* Estiliza o H3 para ficar alinhado à direita. */
+.secao {
+    text-align: right;
+}
+
+/* Estiliza o bloco de navegação. */
+nav {
+    margin: 20px 0; /* Adiciona espaçamento vertical ao redor dos links. */
+}
+
+/* Estiliza as âncoras (links) dentro da navegação. */
+nav a {
+    color: #007BFF;       /* Define a cor do link para azul. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+}
+
+/* A pseudo-classe ':hover' aplica um estilo quando o mouse está sobre o link. */
+nav a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado de volta quando o mouse passa por cima. */
+}
+
+/* Estiliza apenas os H2 que estão dentro de um elemento com a classe 'post'. */
+.post h2 {
+    font-size: 1.8em; /* Define um tamanho de fonte relativo (1.8 vezes o tamanho da fonte do elemento pai). */
+}
+
+/* Estiliza o <span> com a classe 'texto-estilizado'. */
+.texto-estilizado {
+    color: #007BFF;     /* Define a cor para azul. */
+    font-weight: bold; /* Deixa o texto em negrito. */
+}
+
+/* Estiliza o parágrafo que deve ser centralizado. */
+.texto-centralizado {
+    text-align: center;
+}
+
+/* Estiliza o parágrafo que deve ter o alinhamento justificado. */
+.paragrafo-justificado {
+    text-align: justify; /* Alinha o texto nas margens esquerda e direita. */
+}
+
+
+/* --- SEÇÃO 3: ESTILOS DE COMPONENTES --- */
+/* Regras para blocos específicos como a barra lateral. */
+
+/* Estiliza o bloco <aside> para se destacar visualmente. */
+.conteudo-relacionado {
+    margin-top: 40px;            /* Adiciona um espaço maior acima dele, separando-o do artigo. */
+    padding: 15px;               /* Adiciona espaçamento interno. */
+    background-color: #f4f4f4;   /* Define uma cor de fundo cinza claro. */
+    border-left: 4px solid #ccc; /* Adiciona uma borda cinza à esquerda para destaque. */
+}
+
+/* Estiliza o H3 que está dentro do 'conteudo-relacionado'. */
+.conteudo-relacionado h3 {
+    margin-top: 0; /* Remove a margem superior padrão do h3 para que ele fique alinhado ao topo do seu container. */
+}
