@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Meu Primeiro Blog</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Resultado Esperado</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
 
-    <body>
+    <header class="cabecalho-atividade">
+        <h1>Atividade - Resultado Esperado</h1>
+    </header>
+
+    <main class="container">
         
-        <header>
-            <h1 id="centralizado">Bem-vindo ao Meu Blog</h1>
-            
-            <nav>
-                <p>
-                    <a target="_blank" href="https://www.google.com">Posts</a> |
-                    <a target="_blank" href="https://www.google.com">Contato</a> |
-                    <a target="_blank" href="https://www.google.com">Sobre</a>
-                </p>
-            </nav>
-        </header>
+        <h1 class="titulo-principal">Título principal (H1) - centralizado</h1>
+        <h2 class="subtitulo">Subtítulo (H2) - alinhado à esquerda</h2>
+        <h3 class="secao">Seção (H3) - alinhado à direita</h3>
+        <hr>
+        <h4>Subseção (H4)</h4>
+        <h5>Detalhe (H5)</h5>
+        <h6>Nota (H6)</h6>
 
-        <section id="posts">
-            
-            <article class="post">
-                
-                <header>
-                    <h2>Meu Blog - Primeiro Post</h2>
-                    <p id="sublinhado">
-                        <em>Meu</em> <strong>primeiro</strong> post, aprendendo HTML.
-                    </p>
-                </header>
-                
-                <p id="estilo">
-                    Meu segundo parágrafo, criado durante a aula.
-                </p>
-                <div class="center">
-                    Este texto esta centralizado.
-                </div>
-                <p id="quebra_linha">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Quaerat laboriosam natus animi iste voluptate laborum quis earum consequatur dicta quod? Tempore officia, velit aliquid beatae aperiam dignissimos. Id, placeat ratione?
-                </p>
-                
-                <aside id="lateral">
-                    <h3>Conteúdo Relacionado</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum voluptatibus ipsam sint facere. Sed, eligendi facere illo ullam itaque fuga a corrupti vitae!
-                    </p>
-                </aside>
+        <nav>
+            <a href="#">Posts</a> | 
+            <a href="#">Lateral</a> | 
+            <a href="#">Rodapé</a>
+        </nav>
 
-            </article> </section> <footer id="rodape">
+        <article class="post">
+            <h2>Meu Blog - Primeiro Post</h2>
+
             <p>
-                &copy; 2025 - Exemplo didático de HTML da Aula
+                Este é um parágrafo com <strong>negrito</strong>, <em>itálico</em>, <u>sublinhado</u>, <s>riscado</s>, além de exemplos de <sub>subscrito</sub> e <sup>sobrescrito</sup>.
             </p>
-        </footer>
 
-    </body>
+            <p>
+                Exemplo de <span class="texto-estilizado">texto estilizado</span> (substituindo a tag &lt;font&gt; obsoleta).
+            </p>
+
+            <p class="texto-centralizado">
+                Este texto está centralizado (substituindo &lt;center&gt;).
+            </p>
+
+            <p class="paragrafo-justificado">
+                Parágrafo justificado para demonstrar alinhamento.
+                Esta é a linha seguinte após o &lt;br&gt;.<br>
+            </p>
+        </article>
+
+        <aside class="conteudo-relacionado">
+            <h3>Conteúdo Relacionado</h3>
+            <p>
+                Links, anúncios, ou notas que não fazem parte do fluxo principal do artigo.
+            </p>
+        </aside>
+
+    </main>
+
+</body>
 </html>
