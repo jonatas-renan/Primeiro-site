@@ -1,0 +1,254 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Início do documento HTML com idioma definido para português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz a página se ajustar a dispositivos móveis -->
+    <title>Atividade - Resultado Esperado</title> <!-- Título exibido na aba do navegador -->
+    <style>
+        /* ================= ESTILOS GERAIS ================= */
+        body {
+            font-family: sans-serif; /* Fonte sem serifa */
+            background-color: #f4f4f4; /* Cor de fundo */
+            margin: 20px; /* Espaçamento externo */
+        }
+
+        /* Cabeçalho e Rodapé */
+        .page-header, .page-footer {
+            text-align: center; /* Centraliza o texto */
+            background-color: #e7e7e7; /* Fundo cinza claro */
+            border: 1px solid #ccc; /* Borda cinza */
+            padding: 5px; /* Espaçamento interno */
+            margin-bottom: 20px; /* Espaçamento externo inferior */
+        }
+        .page-header h1 {
+            margin: 0; /* Remove espaçamento padrão */
+            font-size: 2em; /* Tamanho grande da fonte */
+            color: #335b8e; /* Cor azul */
+        }
+        .page-footer {
+            margin-top: 20px; /* Espaçamento superior */
+            font-size: 0.9em; /* Fonte um pouco menor */
+        }
+
+        /* Contêiner principal com Grid Layout */
+        .main-container {
+            display: grid; /* Usa grid */
+            grid-template-columns: repeat(4, 1fr); /* 4 colunas de mesma largura */
+            grid-template-rows: auto; /* Altura automática */
+            gap: 15px; /* Espaçamento entre blocos */
+            grid-template-areas:
+                "imagens video audio formulario"
+                "links   listas tabelas identificadores"
+                "divbox  divbox divbox divbox"; /* Define as áreas */
+        }
+
+        /* Estilo padrão para cada bloco */
+        .box {
+            border: 1px solid #ccc; /* Borda cinza */
+            padding: 15px; /* Espaçamento interno */
+            background-color: #fff; /* Fundo branco */
+        }
+        .box h3 {
+            margin-top: 0; /* Remove margem superior */
+            border-bottom: 1px solid #eee; /* Linha embaixo do título */
+            padding-bottom: 5px; /* Espaço abaixo do título */
+        }
+
+        /* Atribuindo cada seção à sua área no grid */
+        #imagens { grid-area: imagens; }
+        #video { grid-area: video; }
+        #audio { grid-area: audio; }
+        #formulario { grid-area: formulario; }
+        #links { grid-area: links; }
+        #listas { grid-area: listas; }
+        #tabelas { grid-area: tabelas; }
+        #identificadores { grid-area: identificadores; }
+        #div-container { grid-area: divbox; }
+
+        /* Estilos Específicos */
+        .imagem-item {
+            display: flex; /* Organiza em linha */
+            align-items: center; /* Alinha verticalmente */
+            margin-bottom: 10px; /* Espaço entre imagens */
+        }
+        .imagem-item img {
+            margin-right: 10px; /* Espaço à direita da imagem */
+        }
+        #video video {
+            width: 100%; /* Ocupa toda a largura do container */
+            max-width: 200px; /* Máximo de 200px */
+        }
+        #formulario form {
+            display: flex; /* Layout flexível */
+            flex-direction: column; /* Em coluna */
+        }
+        #formulario label {
+            margin-top: 10px; /* Espaço acima */
+            margin-bottom: 5px; /* Espaço abaixo */
+        }
+        #formulario input, #formulario textarea {
+            padding: 8px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda cinza */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+        #formulario button {
+            margin-top: 15px; /* Espaço acima */
+            padding: 10px; /* Espaçamento interno */
+            background-color: #335b8e; /* Cor de fundo azul */
+            color: white; /* Texto branco */
+            border: none; /* Sem borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Muda o cursor ao passar */
+        }
+        #tabelas table {
+            width: 100%; /* Ocupa toda a largura */
+            border-collapse: collapse; /* Junta bordas */
+        }
+        #tabelas th, #tabelas td {
+            border: 1px solid #ccc; /* Bordas cinza */
+            padding: 8px; /* Espaço interno */
+            text-align: left; /* Alinhamento à esquerda */
+        }
+        #tabelas th {
+            background-color: #f2f2f2; /* Fundo cinza claro */
+        }
+        .destaque {
+            background-color: yellow; /* Fundo amarelo */
+        }
+        .div-exemplo {
+             border: 1px solid #ccc; /* Borda cinza */
+             padding: 10px; /* Espaço interno */
+             margin-top: 10px; /* Espaço acima */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header class="page-header">
+        <h1>Atividade - Resultado Esperado</h1>
+        <p>Aula 04 - Mídias em HTML</p>
+    </header>
+
+    <!-- Conteúdo principal organizado em grid -->
+    <main class="main-container">
+
+        <!-- Seção de imagens -->
+        <section id="imagens" class="box">
+            <h3>Imagens</h3>
+            <div class="imagem-item">
+                <img src="babuino.png" alt="Foto de um Babuino" width="300" height="300"> Imagem 1 <!--A imagem ficou maior sem width e height -->
+            </div>
+            <div class="imagem-item">
+                <img src="gorila.png" width="300" height="300" alt="Foto de um Gorila"> Imagem 2
+            </div>
+            <div class="imagem-item">
+                <img src="macaco.png" width="300" alt="Foto de um Macaco" height="300"> Imagem 3
+            </div>
+        </section>
+
+        <!-- Seção de vídeo -->
+        <section id="video" class="box">
+            <h3>Vídeo</h3>
+            <video src="video.mp4" width="300" controls poster="macaco.png"> 
+            </video> <!--O video ficou sem botão de play, pause e nem apareceu-->
+        </section>
+
+        <!-- Seção de áudio -->
+        <section id="audio" class="box">
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                <source src="audio.ogg" type="audio/ogg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <!-- Seção com formulário -->
+        <section id="formulario" class="box">
+            <h3>Formulário</h3>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção com links -->
+        <section id="links" class="box">
+            <h3>Links</h3>
+            <p><a href="https://www.google.com">Google</a></p>
+            <p><a href="https://stock.adobe.com/br/search?k=%22bolo+caseiro%22"><img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/beirario/media/uploads/produtos/foto/xrwupuqt/file.jpg" width="300" alt="Bolos"></a></p>
+            <p><a href="https://media.istockphoto.com/id/526127344/pt/foto/sagu%C3%AD-de-tufo-macaco.jpg?s=612x612&w=0&k=20&c=uD0gigiLdOPUwPMVT8GhraDUIEUgADOZl0UF1Y-FT1o=" target="_blank">Saguis</a></p>
+        </section>
+
+        <!-- Seção com listas -->
+        <section id="listas" class="box">
+            <h3>Listas</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+        </section>
+
+        <!-- Seção com tabelas -->
+        <section id="tabelas" class="box">
+            <h3>Tabelas</h3>
+            <table>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+                <tr>
+                    <td>Linha 1</td>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 2</td>
+                    <td>Dado 3</td>
+                    <td>Dado 4</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Seção sobre identificadores e classes -->
+        <section id="identificadores" class="box">
+            <h3>Identificadores e Classes</h3>
+            <p id="introdução">Eu estou gostando muito de Web Design</p>
+            <p>Parágrafo com classe "<span class="destaque">destaque</span>".</p>
+        </section>
+        
+        <!-- Exemplo de uso da tag div -->
+        <section id="div-container" class="box">
+             <h3>Div Contêiner</h3>
+             <div class="div-exemplo">
+                 <p>O elemento div é um dos mais fundamentais no HTML. Ele funciona como um contêiner genérico...</p>
+                 <p>Ao atribuir uma class a um div, podemos aplicar estilos e organizar o layout.</p>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="page-footer">
+        <p>© 2025 - Exemplo didático de HTML da Aula 04</p>
+    </footer>
+
+</body>
+</html>
